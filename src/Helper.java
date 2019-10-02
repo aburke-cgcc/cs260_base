@@ -82,7 +82,6 @@ public class Helper{
     
     /** Print polynomial term example
 	 * @param n integer to perform polynomial calculation
-	 * @return void print to console
 	 */
 	public void printPolyDemo(int n) {
 		System.out.println("30n^3 + 15n^2 + 10 = " + polyDemo(n) + ", n = " + n);
@@ -91,14 +90,12 @@ public class Helper{
 	}
 
     /** Get current time for tracker start
-     * @return void.
      */
     public void timeTrackerStart(){
         startTime = System.nanoTime();
     }
 
     /** Get current time for tracker end
-     * @return void.
      */
     public void timeTrackerStop(){
         endTime = System.nanoTime();
