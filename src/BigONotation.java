@@ -10,7 +10,7 @@ public class BigONotation {
 		return i;
 	}
 	
-	/** Constant time example
+	/** Squared time example
 	 * @param items integer array
 	 * @param valueToSearch integer value to search for in integer array
 	 * @return return index of value searched for; -1 if not found
