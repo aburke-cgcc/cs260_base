@@ -10,7 +10,7 @@ public class BigONotation {
 		return i;
 	}
 	
-	/** Linear time example
+	/** Linear search scale example
 	 * @param items integer array
 	 * @param valueToSearch integer value to search for in integer array
 	 * @return return index of value searched for; -1 if not found
@@ -29,7 +29,7 @@ public class BigONotation {
 		return -1;
 	}
 	
-	/** Quadratic time example
+	/** Quadratic search scale example
 	 * @param items integer array
 	 * @param valueToSearch integer value to search for in integer array
 	 * @return return index of value searched for; -1 if not found
@@ -45,7 +45,11 @@ public class BigONotation {
 		return new int[] {-1, -1};
 	}
 	
-	/** Exponential time example
+	/** Quadratic sort scale example
+	 * 
+	 */
+	
+	/** Exponential scale example
 	 * @param n integer value to begin fibonacci sequence
 	 * @return return final value from fibonacci sequence
 	 */
@@ -59,7 +63,7 @@ public class BigONotation {
         return fibonacci(n-1) + fibonacci(n-2); 
     }
 	
-	/** Logarithmic time example
+	/** Logarithmic search scale example
 	 * @param items integer array
 	 * @param valueToSearch integer value to search for in integer array
 	 * @return return index of value searched for; -1 if not found
