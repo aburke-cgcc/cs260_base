@@ -14,6 +14,16 @@ public class BigONotation {
 	 * @return int
 	 */
 	public int searchNTime(int[] items, int value) {
-		return 0;
+		int i = 0;
+		
+		do {
+			if(items[i] == value)
+				//return index if value is found
+				return i;
+			i++;
+		} while(i < items.length);
+		
+		//return -1 if not found
+		return -1;
 	}
 }
