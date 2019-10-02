@@ -5,7 +5,7 @@ public class BigONotation {
 	 * @return int
 	 */
 	public int searchConstantTime(int[] items) {
-		return items[0];
+		return 0;
 	}
 	
 	/** Constant time example

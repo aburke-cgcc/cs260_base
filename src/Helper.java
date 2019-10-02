@@ -31,7 +31,7 @@ public class Helper{
      * @return int[] array
      */
     public int[][] generateRandom2dArray(int n){
-        //instnatiate 2d array of n size
+        //instantiate 2d array of n size
         int[][] iArray = new int[n][];
 
         //for all elements, make a nested array of random size between 1 and 10
