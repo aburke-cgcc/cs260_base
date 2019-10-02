@@ -68,7 +68,7 @@ public class BigONotation {
 	 * @param valueToSearch integer value to search for in integer array
 	 * @return return index of value searched for; -1 if not found
 	 */
-	public int searchLogarithmicTime(int[] items, int valueToFind) {
+	public int searchLogarithmicTime(int[] items, int valueToSearch) {
 
         int firstIndex = 0;
         int lastIndex = items.length - 1;
@@ -79,18 +79,18 @@ public class BigONotation {
         	int middleIndex = (firstIndex + lastIndex) / 2;
             
             // if the middle element is our goal element, return its index
-            if (items[middleIndex] == valueToFind) {
+            if (items[middleIndex] == valueToSearch) {
                 return middleIndex;
             }
     
             // if the middle element is smaller
             // point our index to the middle+1, taking the first half out of consideration
-            else if (items[middleIndex] < valueToFind)
+            else if (items[middleIndex] < valueToSearch)
                 firstIndex = middleIndex + 1;
     
             // if the middle element is bigger
             // point our index to the middle-1, taking the second half out of consideration
-            else if (items[middleIndex] > valueToFind)
+            else if (items[middleIndex] > valueToSearch)
                 lastIndex = middleIndex - 1;
     
         }
