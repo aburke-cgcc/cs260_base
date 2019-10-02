@@ -1,3 +1,4 @@
+package edu.cgcc.cs260;
 import java.util.Arrays;
 
 public class MainEntry {

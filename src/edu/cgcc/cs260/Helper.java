@@ -1,3 +1,4 @@
+package edu.cgcc.cs260;
 import java.util.Random;
 
 public class Helper{
@@ -7,7 +8,9 @@ public class Helper{
     private long endTime;
     //#endregion
     
-    //constructor
+    /**Constructor instantiates new random object with seed and sets member to it.
+     * 
+     */
     public Helper(){
         random = new Random(System.currentTimeMillis());
     }
