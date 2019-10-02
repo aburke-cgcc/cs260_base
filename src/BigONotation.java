@@ -2,22 +2,24 @@
 public class BigONotation {
 	/** Constant time example
 	 * @param items integer array
-	 * @return int
+	 * @return always return index 0
 	 */
 	public int searchConstantTime(int[] items) {
-		return 0;
+		int i = 0;
+		
+		return i;
 	}
 	
 	/** Constant time example
 	 * @param items integer array
-	 * @param value integer value to search for
-	 * @return int
+	 * @param valueToSearch integer value to search for in integer array
+	 * @return return index of value searched for; -1 if not found
 	 */
-	public int searchNTime(int[] items, int value) {
+	public int searchNTime(int[] items, int valueToSearch) {
 		int i = 0;
 		
 		do {
-			if(items[i] == value)
+			if(items[i] == valueToSearch)
 				//return index if value is found
 				return i;
 			i++;

@@ -29,6 +29,12 @@ public class MainEntry {
 		result = bigO.searchNTime(iArray, valueToSearch);
 		helper.timeTrackerStop();
 		System.out.println("Index is: " + result + ", Time taken: " + helper.elapsedTimeInNano());
+		
+		//O(n^2) - squared time search
+		
+		//O(2n) - exponential time search
+		
+		//O(log n) - logarithmic time search
 	}
 	
 	private static void printPolyDemo(int n) {
