@@ -79,6 +79,16 @@ public class Helper{
     public int squaredDemo(int n){
         return 15 * (n * n);
     }
+    
+    /** Print polynomial term example
+	 * @param n integer to perform polynomial calculation
+	 * @return void print to console
+	 */
+	public void printPolyDemo(int n) {
+		System.out.println("30n^3 + 15n^2 + 10 = " + polyDemo(n) + ", n = " + n);
+		System.out.println("n^3: " + cubeDemo(n) + ", n^2: " + squaredDemo(n) + ", 10");
+		System.out.println();
+	}
 
     /** Get current time for tracker start
      * @return void.
