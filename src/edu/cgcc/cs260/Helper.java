@@ -117,5 +117,31 @@ public class Helper{
     public long elapsedTimeInMilli(){
         return (endTime - startTime) / 1000000;
     }
+    
+    /**
+     * Wait for n number of seconds; print . while waiting to console; print done after
+     * time period has elapsed
+     * @param s Number of seconds for which to wait
+     */
+    public static void waitForNSeconds(int s) {
+    	for(int i = 0; i < s; i++) {
+			try {
+				Thread.sleep(1000);
+				System.out.print(".");
+			}catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
+    	System.out.println("done");
+    }
+    
+    /**
+     * 
+     * @param max maximum integer to return
+     * @return randomized integer
+     */
+    public int getRandomInt(int max) {
+    	return random.nextInt(max);
+    }
     //#endregion
 }
